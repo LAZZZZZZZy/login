@@ -60,7 +60,7 @@ public class RegisterAccount extends HttpServlet {
 	     int rs = 0;
 
 	     try {                                                    //数据可的登录名  登录密码
-	         conn = (Connection) DriverManager.getConnection(url, "root", "134679285");
+	         conn = (Connection) DriverManager.getConnection(url, "root", "123456");
 	         stmt = (Statement) conn.createStatement();
 	         // SQL语句
 	         String sql = "INSERT INTO user (name,password) VALUES ( '" +username+"' , '"+pwd +"');";

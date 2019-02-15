@@ -38,7 +38,7 @@ public class CheckAccount extends HttpServlet {
      ResultSet rs = null;
 
      try {                                                    //数据可的登录名  登录密码
-         conn = (Connection) DriverManager.getConnection(url, "root", "134679285");
+         conn = (Connection) DriverManager.getConnection(url, "root", "123456");
          stmt = (Statement) conn.createStatement();
          // SQL语句
          String sql = "select * from user where name='" + username + "' and password= '" + pwd + "'";
